@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj": {}
+    "E:\\REPOS\\Smietnik\\PRACA_INŻYNIERSKA\\RackManager\\RackManager.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj": {
+    "E:\\REPOS\\Smietnik\\PRACA_INŻYNIERSKA\\RackManager\\RackManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj",
+        "projectUniqueName": "E:\\REPOS\\Smietnik\\PRACA_INŻYNIERSKA\\RackManager\\RackManager.csproj",
         "projectName": "RackManager",
-        "projectPath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj",
+        "projectPath": "E:\\REPOS\\Smietnik\\PRACA_INŻYNIERSKA\\RackManager\\RackManager.csproj",
         "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\obj\\",
+        "outputPath": "E:\\REPOS\\Smietnik\\PRACA_INŻYNIERSKA\\RackManager\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

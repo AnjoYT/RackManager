@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Repos\WSB\PracaInżynierska\RackManager\obj\Debug\net8.0-windows\
+E:\REPOS\Smietnik\PRACA_INŻYNIERSKA\RackManager\obj\Debug\net8.0-windows\
 RackManager
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Repos\WSB\PracaInżynierska\RackManager\App.xaml
+E:\REPOS\Smietnik\PRACA_INŻYNIERSKA\RackManager\App.xaml
 3-1018576313
 
-13-273316663
-198155382431
+17-137744578
+1981451641563
 MainWindow.xaml;Views\AnimalsView.xaml;Views\NavigationView.xaml;
 
 True
