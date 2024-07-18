@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c/y4/t/DgcM0vWYs4ZMnpjsV+YAVls1h+JDTXQqpjgxi8x09V3gMwLjwmFf3rOBPdjemnpLz+9OIfGurVIpE/g==",
+  "dgSpecHash": "2wih4Gw6xx2bqmpXEzzLbP06tzLKxw3NT3t7kP960u82U7c6zqs4oTdeNTd1CKj3oCOedLboKhUJHpNbLEtJNA==",
   "success": true,
-  "projectFilePath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager.csproj",
+  "projectFilePath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

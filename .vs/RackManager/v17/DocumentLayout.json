@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Repos\\WSB\\PracaIn\u017Cynierska\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Repos\\WSB\\PracaIn\u017Cynierska\\RackManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|d:\\repos\\wsb\\pracain\u017Cynierska\\rackmanager\\models\\animalbasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:models\\animalbasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|d:\\repos\\wsb\\pracain\u017Cynierska\\rackmanager\\enums\\sexenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:enums\\sexenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +27,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SexEnum.cs",
+              "DocumentMoniker": "D:\\Repos\\WSB\\PracaIn\u017Cynierska\\RackManager\\Enums\\SexEnum.cs",
+              "RelativeDocumentMoniker": "Enums\\SexEnum.cs",
+              "ToolTip": "D:\\Repos\\WSB\\PracaIn\u017Cynierska\\RackManager\\Enums\\SexEnum.cs",
+              "RelativeToolTip": "Enums\\SexEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T16:30:09.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimalBaseModel.cs",
+              "DocumentMoniker": "D:\\Repos\\WSB\\PracaIn\u017Cynierska\\RackManager\\Models\\AnimalBaseModel.cs",
+              "RelativeDocumentMoniker": "Models\\AnimalBaseModel.cs",
+              "ToolTip": "D:\\Repos\\WSB\\PracaIn\u017Cynierska\\RackManager\\Models\\AnimalBaseModel.cs",
+              "RelativeToolTip": "Models\\AnimalBaseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T16:29:28.396Z",
+              "EditorCaption": ""
             }
           ]
         },

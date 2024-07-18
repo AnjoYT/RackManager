@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RackManager.Enums
 {
-    enum SexEnum
+    public enum SexEnum
     {
         Male,
         Female

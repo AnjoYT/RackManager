@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager.csproj",
+      "projectUniqueName": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj",
       "projectName": "RackManager",
-      "projectPath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager.csproj",
+      "projectPath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\RackManager.csproj",
       "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\WSB\\PracaInżynierska\\obj\\",
+      "outputPath": "D:\\Repos\\WSB\\PracaInżynierska\\RackManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",

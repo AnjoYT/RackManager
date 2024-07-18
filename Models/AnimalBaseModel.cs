@@ -1,4 +1,6 @@
-﻿namespace RackManager.Models
+﻿using RackManager.Enums;
+
+namespace RackManager.Models
 {
     public class AnimalBaseModel
     {
@@ -6,6 +8,6 @@
         public DateTime DateOfBirth { get; set; }
         public string Image { get; set; }
         public float Weight { get; set; }
-        public enum Sex { get;set; }
+        public SexEnum Sex { get;set; }
     }
 }
