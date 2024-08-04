@@ -5,20 +5,27 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:RackManager.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:RackManager.Models"
     d:DesignHeight="450"
     d:DesignWidth="645"
     Background="White"
     mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/AnimalResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid Margin="10">
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-            <DataTemplate>
-            <WrapPanel
-                Width="Auto"
-                Height="Auto"
-                Background="Blue">
-                
-            </WrapPanel>
-            </DataTemplate>
+            <ItemsControl ItemsSource="{Binding Animals}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
         </ScrollViewer>
     </Grid>
 </UserControl>

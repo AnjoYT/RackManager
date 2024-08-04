@@ -2,10 +2,12 @@
 
 namespace RackManager.Models
 {
-    public class SnakeModel : AnimalBaseModel
+    public class SnakeModel : MainAnimalModel
     {
-        public string species { get; set; }
-        public ObservableCollection<string> Genes { get; set; }
+        public string Species { get; set; }
+        public ObservableCollection<string>? Genes { get; set; }
         public bool IsVenomous { get; set; }
+        public double? Humidity { get; set; }
+        public double? Temperature { get; set; }
     }
 }

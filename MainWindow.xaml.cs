@@ -11,10 +11,5 @@ namespace RackManager
         {
             InitializeComponent();
         }
-
-        private void NavigationView_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

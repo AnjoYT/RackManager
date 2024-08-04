@@ -10,17 +10,19 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/ViewsResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="155" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid.Resources>
-            <!--<DataTemplate DataType="{x:Type}">
-                <views:AnimalsView />
-            </DataTemplate>-->
-        </Grid.Resources>
-        <views:NavigationView Grid.Column="0" Loaded="NavigationView_Loaded" />
+        <views:NavigationView Grid.Column="0" />
         <ContentPresenter Grid.Column="1" Content="{Binding CurrentView}" />
     </Grid>
 </Window>

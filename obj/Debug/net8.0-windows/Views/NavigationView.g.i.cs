@@ -53,7 +53,7 @@ namespace RackManager.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RackManager;V1.0.0.0;component/views/navigationview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RackManager;component/views/navigationview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\NavigationView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

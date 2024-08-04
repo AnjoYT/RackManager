@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\REPOS\Smietnik\PRACA_INŻYNIERSKA\RackManager\App.xaml
-3-1018576313
+5999952023
 
-11-749848672
+18-1785798115
 1981451641563
-MainWindow.xaml;Views\AnimalsView.xaml;Views\NavigationView.xaml;
+MainWindow.xaml;Resources\AnimalResources.xaml;Resources\ViewsResources.xaml;Views\AnimalsView.xaml;Views\NavigationView.xaml;
 
 False
 

@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:models="clr-namespace:RackManager.Models">
+    <DataTemplate x:Key="SnakeTemplate" DataType="{x:Type models:SnakeModel}">
+        <Border
+            Margin="5,5"
+            BorderBrush="Black"
+            BorderThickness="1">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="{Binding Name}" />
+                <Image
+                    Width="150"
+                    Height="150"
+                    HorizontalAlignment="Center"
+                    Source="{Binding Image}" />
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+    <DataTemplate x:Key="AddCardTemplate" DataType="{x:Type models:BaseCardModel}">
+        <Border
+            Margin="5,5"
+            BorderBrush="Black"
+            BorderThickness="1">
+            <StackPanel>
+                <Image
+                    Width="150"
+                    Height="150"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="{Binding Image}" />
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+</ResourceDictionary>
