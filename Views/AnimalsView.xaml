@@ -19,7 +19,7 @@
     </UserControl.Resources>
     <Grid Margin="10">
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-            <ItemsControl ItemsSource="{Binding Animals}">
+            <ItemsControl ItemTemplateSelector="{StaticResource CardTemplateSelector}" ItemsSource="{Binding Animals}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel />

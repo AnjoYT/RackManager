@@ -11,12 +11,10 @@ namespace RackManager.ViewModels
         {
             Animals = new ObservableCollection<BaseCardModel>()
             {
-                new SnakeModel()
+                new BaseCardModel()
                 {
-                    Name = "Dave",
                     Image =PathFinder.RelativePath(@"Assets\Images\","AddAnimal.png"),
-                    Species = "Corn Snake",
-                    IsVenomous = false
+                    IsAddCard=true
                 },
                 new SnakeModel()
                 {
