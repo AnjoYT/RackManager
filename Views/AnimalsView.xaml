@@ -6,8 +6,9 @@
     xmlns:local="clr-namespace:RackManager.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="clr-namespace:RackManager.Models"
-    d:DesignHeight="450"
-    d:DesignWidth="645"
+    Margin="10"
+    d:DesignHeight="430"
+    d:DesignWidth="665"
     Background="White"
     mc:Ignorable="d">
     <UserControl.Resources>
@@ -17,7 +18,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
-    <Grid Margin="10">
+    <Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemTemplateSelector="{StaticResource CardTemplateSelector}" ItemsSource="{Binding Animals}">
                 <ItemsControl.ItemsPanel>

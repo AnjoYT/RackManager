@@ -29,6 +29,13 @@ namespace RackManager.ViewModels
                     Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
                     Species = "Corn Snake",
                     IsVenomous = false
+                },
+                new SnakeModel()
+                {
+                    Name = "George",
+                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
+                    Species = "Corn Snake",
+                    IsVenomous = false
                 }
             };
         }
