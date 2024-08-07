@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RackManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a110a21f8b86c597eb94b1307d7050cde3bba5ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95ddd1d712760a920925bedbf734e5bdb9d9ac54")]
 [assembly: System.Reflection.AssemblyProductAttribute("RackManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RackManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
