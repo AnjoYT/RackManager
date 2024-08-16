@@ -8,5 +8,6 @@ namespace RackManager.Models
         public DateTime? DateOfBirth { get; set; }
         public float? Weight { get; set; }
         public SexEnum? Sex { get; set; }
+
     }
 }

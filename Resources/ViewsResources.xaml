@@ -6,6 +6,9 @@
     <DataTemplate DataType="{x:Type vms:AnimalsViewModel}">
         <views:AnimalsView />
     </DataTemplate>
+    <DataTemplate DataType="{x:Type vms:AddAnimalViewModel}">
+        <views:AddAnimalView />
+    </DataTemplate>
     <Style x:Key="NavigationButton" TargetType="Button">
         <Setter Property="Width" Value="150" />
         <Setter Property="Height" Value="50" />

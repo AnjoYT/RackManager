@@ -1,14 +1,22 @@
-﻿using System.Windows.Input;
+﻿using RackManager.Stores;
+using RackManager.ViewModels;
 
 namespace RackManager.Commands
 {
-    public class NavigationCommand : CommandBase
+    public class NavigationCommand<TViewModel> : CommandBase where TViewModel : ViewModelBase
     {
-        public ICommand AnimalCommand { get; set; }
+        private readonly NavigationStore navigationStore;
+        private readonly Func<TViewModel> viewModel;
+
+        public NavigationCommand(NavigationStore navigationStore, Func<TViewModel> viewModel)
+        {
+            this.navigationStore = navigationStore;
+            this.viewModel = viewModel;
+        }
 
         public override void Execute(object? parameter)
         {
-            throw new NotImplementedException();
+            navigationStore.CurrentViewModel = this.viewModel();
         }
     }
 }

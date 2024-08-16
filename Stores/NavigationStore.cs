@@ -2,8 +2,23 @@
 
 namespace RackManager.Stores
 {
-    class NavigationStore
+    public class NavigationStore
     {
-        public ViewModelBase CurrentViewModel { get; set; }
+        private ViewModelBase currentViewModel;
+        public event Action CurrentViewChanged;
+        public ViewModelBase CurrentViewModel
+        {
+            get { return this.currentViewModel; }
+            set
+            {
+                this.currentViewModel = value;
+                OnCurrentViewChanged();
+            }
+        }
+
+        public void OnCurrentViewChanged()
+        {
+            CurrentViewChanged?.Invoke();
+        }
     }
 }

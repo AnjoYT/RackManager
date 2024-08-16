@@ -4,10 +4,7 @@
     xmlns:models="clr-namespace:RackManager.Models"
     xmlns:utils="clr-namespace:RackManager.Utils">
     <DataTemplate x:Key="SnakeTemplate" DataType="{x:Type models:SnakeModel}">
-        <Border
-            Margin="5,5"
-            BorderBrush="Black"
-            BorderThickness="1">
+        <Button Margin="5" Command="{Binding DataContext.AddAnimalCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, UpdateSourceTrigger=PropertyChanged}">
             <StackPanel>
                 <TextBlock HorizontalAlignment="Center" Text="{Binding Name}" />
                 <Image
@@ -16,20 +13,17 @@
                     HorizontalAlignment="Center"
                     Source="{Binding Image}" />
             </StackPanel>
-        </Border>
+        </Button>
     </DataTemplate>
     <DataTemplate x:Key="AddCardTemplate" DataType="{x:Type models:BaseCardModel}">
-        <Border
-            Margin="5,5"
-            BorderBrush="Black"
-            BorderThickness="1">
+        <Button Margin="5" Command="{Binding DataContext.AddAnimalCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, UpdateSourceTrigger=PropertyChanged}">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Image
                     Width="150"
                     Height="150"
                     Source="{Binding Image}" />
             </StackPanel>
-        </Border>
+        </Button>
     </DataTemplate>
     <utils:CardTemplateSelector
         x:Key="CardTemplateSelector"

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dm7BbozjP1xnsBCOcrhqRexNIzQ5ormCHHsX4lG80C11F1m0GgcXenx0lEy65zrRQ75la1vDJ+tcElp416Jfdw==",
+  "dgSpecHash": "tsZ1sGjWjhc=",
   "success": true,
   "projectFilePath": "E:\\REPOS\\Smietnik\\PRACA_INŻYNIERSKA\\RackManager\\RackManager.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.122\\microsoft.xaml.behaviors.wpf.1.1.122.nupkg.sha512"
+  ],
   "logs": []
 }

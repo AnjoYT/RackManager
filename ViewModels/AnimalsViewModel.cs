@@ -1,43 +1,21 @@
-﻿using RackManager.Models;
-using RackManager.Utils;
+﻿using RackManager.Commands;
+using RackManager.Models;
+using RackManager.Services;
+using RackManager.Stores;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace RackManager.ViewModels
 {
     public class AnimalsViewModel : ViewModelBase
     {
-        public ObservableCollection<BaseCardModel> Animals { get; set; }
-        public AnimalsViewModel()
+        private readonly AnimalService animalService;
+        public ICommand AddAnimalCommand { get; set; }
+        public ObservableCollection<BaseCardModel> Cards => animalService.Cards;
+        public AnimalsViewModel(NavigationStore store, AnimalService animalService)
         {
-            Animals = new ObservableCollection<BaseCardModel>()
-            {
-                new BaseCardModel()
-                {
-                    Image =PathFinder.RelativePath(@"Assets\Images\","AddAnimal.png"),
-                    IsAddCard=true
-                },
-                new SnakeModel()
-                {
-                    Name = "Dave",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Species = "Corn Snake",
-                    IsVenomous = false
-                },
-                new SnakeModel()
-                {
-                    Name = "George",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Species = "Corn Snake",
-                    IsVenomous = false
-                },
-                new SnakeModel()
-                {
-                    Name = "George",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Species = "Corn Snake",
-                    IsVenomous = false
-                }
-            };
+            this.animalService = animalService;
+            AddAnimalCommand = new NavigationCommand<AddAnimalViewModel>(store, () => new AddAnimalViewModel(store, this.animalService));
         }
     }
 }

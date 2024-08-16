@@ -8,7 +8,7 @@
     xmlns:models="clr-namespace:RackManager.Models"
     Margin="10"
     d:DesignHeight="430"
-    d:DesignWidth="665"
+    d:DesignWidth="695"
     Background="White"
     mc:Ignorable="d">
     <UserControl.Resources>
@@ -20,7 +20,7 @@
     </UserControl.Resources>
     <Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-            <ItemsControl ItemTemplateSelector="{StaticResource CardTemplateSelector}" ItemsSource="{Binding Animals}">
+            <ItemsControl ItemTemplateSelector="{StaticResource CardTemplateSelector}" ItemsSource="{Binding Cards}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel />
