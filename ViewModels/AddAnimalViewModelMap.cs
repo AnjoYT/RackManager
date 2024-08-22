@@ -7,11 +7,9 @@ namespace RackManager.ViewModels
 {
     partial class AddAnimalViewModel : ViewModelBase
     {
-        private SnakeModel snakeModel;
-        //private readonly EnclousureModel enclousure;
         public ObservableCollection<SexEnum> SexComboBox { get; set; }
-        private SexEnum? sex;
-        public SexEnum? SelectedSex
+        private SexEnum sex;
+        public SexEnum SelectedSex
         {
             get => this.sex;
             set
@@ -30,6 +28,7 @@ namespace RackManager.ViewModels
             {
                 this.name = value;
                 OnPropertyChanged(nameof(name));
+
             }
         }
         private float? weight;
