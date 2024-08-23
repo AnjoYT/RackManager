@@ -1,6 +1,6 @@
 ﻿namespace RackManager.Models
 {
-    interface MinMaxValue<T>
+    interface IMinMaxValue<T>
     {
         public T MinValue { get; set; }
         public T MaxValue { get; set; }

@@ -1,10 +1,10 @@
 ﻿namespace RackManager.Models
 {
-    public class TempModel : MinMaxValue<float>
+    public class TempModel : IMinMaxValue<float?>
     {
-        public float MinValue { get; set; }
-        public float MaxValue { get; set; }
-        public TempModel(float minValue, float maxValue)
+        public float? MinValue { get; set; }
+        public float? MaxValue { get; set; }
+        public TempModel(float? minValue, float? maxValue)
         {
             MinValue = minValue;
             MaxValue = maxValue;

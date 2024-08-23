@@ -1,5 +1,6 @@
 ﻿using RackManager.Commands;
 using RackManager.Enums;
+using RackManager.Exceptions;
 using RackManager.Models;
 using RackManager.Services;
 using RackManager.Stores;
@@ -13,15 +14,31 @@ namespace RackManager.ViewModels
         public AddAnimalViewModel(NavigationStore store, AnimalService animalService)
         {
             this.animalService = animalService;
+
             SexComboBox = new ObservableCollection<SexEnum>(Enum.GetValues(typeof(SexEnum)) as SexEnum[]);
+
             SelectedSex = SexEnum.Female;
 
+
+
             CancelCommand = new NavigationCommand<AnimalsViewModel>(store, () => new AnimalsViewModel(store, animalService));
+
             CreateCommand = new CreateCommand<AnimalsViewModel>(store, () => new AnimalsViewModel(store, animalService), AddAnimal);
         }
 
         private void AddAnimal()
         {
+            tempModel = new TempModel(AnimalMinTemp, AnimalMaxTemp);
+
+            humidityModel = new HumidityModel(AnimalMinHum, AnimalMaxHum);
+            if (tempModel.Conflict())
+            {
+                throw new ValueConflictException();
+            }
+            else if (humidityModel.Conflict())
+            {
+                throw new ValueConflictException();
+            }
             SnakeModel animal = new SnakeModel()
             {
                 Image = "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",

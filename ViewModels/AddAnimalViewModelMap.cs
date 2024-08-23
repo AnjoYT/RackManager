@@ -7,6 +7,8 @@ namespace RackManager.ViewModels
 {
     partial class AddAnimalViewModel : ViewModelBase
     {
+        private IMinMaxValue<float?> tempModel;
+        private IMinMaxValue<int?> humidityModel;
         public ObservableCollection<SexEnum> SexComboBox { get; set; }
         private SexEnum sex;
         public SexEnum SelectedSex
@@ -91,8 +93,8 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(venomous));
             }
         }
-        public int? AnimalMinTemp { get; set; }
-        public int? AnimalMaxTemp { get; set; }
+        public float? AnimalMinTemp { get; set; }
+        public float? AnimalMaxTemp { get; set; }
         public int? AnimalMinHum { get; set; }
         public int? AnimalMaxHum { get; set; }
         public float? AnimalLength { get; set; }

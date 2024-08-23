@@ -2,13 +2,9 @@
 {
     class ValueConflictException : Exception
     {
-        float minValue { get; set; }
-        float maxValue { get; set; }
-
-        public ValueConflictException(float minValue, float maxValue)
+        public ValueConflictException()
         {
-            this.minValue = minValue;
-            this.maxValue = maxValue;
+
         }
     }
 }

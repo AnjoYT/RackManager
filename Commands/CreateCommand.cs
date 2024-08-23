@@ -1,5 +1,7 @@
-﻿using RackManager.Stores;
+﻿using RackManager.Exceptions;
+using RackManager.Stores;
 using RackManager.ViewModels;
+using System.Windows;
 
 namespace RackManager.Commands
 {
@@ -14,13 +16,19 @@ namespace RackManager.Commands
             this.viewModel = viewModel;
             this.navigationStore = navigationStore;
         }
-        //public override bool CanExecute(object? parameter)
-        //{
-        //    return base.CanExecute(parameter);
-        //}
+
         public override void Execute(object? parameter)
         {
-            action?.Invoke();
+            try
+            {
+                action?.Invoke();
+                MessageBox.Show("Object created successfully", "Success", MessageBoxButton.OK);
+            }
+            catch (ValueConflictException)
+            {
+                MessageBox.Show("Cannot create object, incorrect values", "Error", MessageBoxButton.OK);
+            }
+
             navigationStore.CurrentViewModel = this.viewModel();
         }
     }

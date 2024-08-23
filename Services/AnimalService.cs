@@ -15,6 +15,7 @@ namespace RackManager.Services
                     Image = PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),
                     IsAddCard = true
                 },
+
                 new SnakeModel()
                 {
                     Name = "Dave",
