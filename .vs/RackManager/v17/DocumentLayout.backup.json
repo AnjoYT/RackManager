@@ -3,64 +3,48 @@
   "WorkspaceRootPath": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\commands\\createcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:commands\\createcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\viewmodels\\addanimalviewmodelmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:viewmodels\\addanimalviewmodelmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\models\\iminmaxvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:models\\iminmaxvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\models\\snakemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:models\\snakemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\commands\\getimagecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:commands\\getimagecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\viewmodels\\addanimalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:viewmodels\\addanimalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\exceptions\\valueconflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:exceptions\\valueconflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\viewmodels\\addanimalviewmodelmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:viewmodels\\addanimalviewmodelmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\models\\tempmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:models\\tempmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\services\\filedialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:services\\filedialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\models\\humiditymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:models\\humiditymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\commands\\navigationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:commands\\navigationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\resources\\animalresources.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:resources\\animalresources.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\viewmodels\\animalsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:viewmodels\\animalsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\models\\mainanimalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:models\\mainanimalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\services\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:services\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\commands\\createcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:commands\\createcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\views\\addanimalview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:views\\addanimalview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|solutionrelative:views\\animalsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02BEAE40-11E1-45D6-890C-3808A229BFFD}|RackManager.csproj|e:\\repos\\smietnik\\praca_in\u017Cynierska\\rackmanager\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -73,8 +57,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 221,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 410,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,87 +70,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddAnimalViewModel.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AddAnimalViewModel.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AddAnimalViewModel.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T08:05:16.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AnimalService.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Services\\AnimalService.cs",
-              "RelativeDocumentMoniker": "Services\\AnimalService.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Services\\AnimalService.cs",
-              "RelativeToolTip": "Services\\AnimalService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T15:52:22.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainAnimalModel.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\MainAnimalModel.cs",
-              "RelativeDocumentMoniker": "Models\\MainAnimalModel.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\MainAnimalModel.cs",
-              "RelativeToolTip": "Models\\MainAnimalModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:09:05.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TempModel.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\TempModel.cs",
-              "RelativeDocumentMoniker": "Models\\TempModel.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\TempModel.cs",
-              "RelativeToolTip": "Models\\TempModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T17:15:39.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AnimalsViewModel.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AnimalsViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AnimalsViewModel.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AnimalsViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AnimalsViewModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:14:32.24Z",
+              "WhenOpened": "2024-08-28T17:22:32.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "NavigationCommand.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\NavigationCommand.cs",
-              "RelativeDocumentMoniker": "Commands\\NavigationCommand.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\NavigationCommand.cs",
-              "RelativeToolTip": "Commands\\NavigationCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "CreateCommand.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\CreateCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\CreateCommand.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\CreateCommand.cs",
+              "RelativeToolTip": "Commands\\CreateCommand.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:54:36.773Z",
+              "WhenOpened": "2024-08-27T17:56:01.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetImageCommand.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\GetImageCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\GetImageCommand.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\GetImageCommand.cs*",
+              "RelativeToolTip": "Commands\\GetImageCommand.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:17:37.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileDialogService.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Services\\FileDialogService.cs",
+              "RelativeDocumentMoniker": "Services\\FileDialogService.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Services\\FileDialogService.cs",
+              "RelativeToolTip": "Services\\FileDialogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:25:25.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnimalsViewModel.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AnimalsViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AnimalsViewModel.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AnimalsViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AnimalsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T17:48:06.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AnimalResources.xaml",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Resources\\AnimalResources.xaml",
+              "RelativeDocumentMoniker": "Resources\\AnimalResources.xaml",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Resources\\AnimalResources.xaml",
+              "RelativeToolTip": "Resources\\AnimalResources.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-27T14:44:26.716Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 277,
+          "DockedWidth": 282,
           "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddAnimalViewModel.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AddAnimalViewModel.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AddAnimalViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:40:27.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddAnimalViewModelMap.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModelMap.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AddAnimalViewModelMap.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModelMap.cs",
+              "RelativeToolTip": "ViewModels\\AddAnimalViewModelMap.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:40:30.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "Services\\ImageService.cs",
+              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Services\\ImageService.cs",
+              "RelativeToolTip": "Services\\ImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T15:19:28.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 152,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -175,96 +203,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateCommand.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\CreateCommand.cs",
-              "RelativeDocumentMoniker": "Commands\\CreateCommand.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Commands\\CreateCommand.cs",
-              "RelativeToolTip": "Commands\\CreateCommand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T10:58:49.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddAnimalViewModelMap.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModelMap.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AddAnimalViewModelMap.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\ViewModels\\AddAnimalViewModelMap.cs",
-              "RelativeToolTip": "ViewModels\\AddAnimalViewModelMap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T08:05:30.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IMinMaxValue.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\IMinMaxValue.cs",
-              "RelativeDocumentMoniker": "Models\\IMinMaxValue.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\IMinMaxValue.cs",
-              "RelativeToolTip": "Models\\IMinMaxValue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T17:17:16.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ValueConflictException.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Exceptions\\ValueConflictException.cs",
-              "RelativeDocumentMoniker": "Exceptions\\ValueConflictException.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Exceptions\\ValueConflictException.cs",
-              "RelativeToolTip": "Exceptions\\ValueConflictException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T16:44:14.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SnakeModel.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\SnakeModel.cs",
-              "RelativeDocumentMoniker": "Models\\SnakeModel.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\SnakeModel.cs",
-              "RelativeToolTip": "Models\\SnakeModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T08:45:07.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HumidityModel.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\HumidityModel.cs",
-              "RelativeDocumentMoniker": "Models\\HumidityModel.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Models\\HumidityModel.cs",
-              "RelativeToolTip": "Models\\HumidityModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T17:16:10.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T09:31:42.798Z"
             }
           ]
         },
@@ -299,7 +237,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -332,7 +270,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "AddAnimalView.xaml",
               "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Views\\AddAnimalView.xaml",
               "RelativeDocumentMoniker": "Views\\AddAnimalView.xaml",
@@ -350,11 +288,11 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "6ad0a771-4d8f-4bc9-acac-5c5d5037707f",
+        "Id": "3435b088-e4a8-4906-b761-7a7dfe58968c",
         "Display": 1,
-        "X": 1061,
-        "Y": 264,
-        "Width": 796,
+        "X": 440,
+        "Y": 0,
+        "Width": 985,
         "Height": 756,
         "WindowState": 2
       },
@@ -365,14 +303,14 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "AnimalsView.xaml",
               "DocumentMoniker": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Views\\AnimalsView.xaml",
               "RelativeDocumentMoniker": "Views\\AnimalsView.xaml",
               "ToolTip": "E:\\REPOS\\Smietnik\\PRACA_IN\u017BYNIERSKA\\RackManager\\Views\\AnimalsView.xaml",
               "RelativeToolTip": "Views\\AnimalsView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-15T09:46:09.675Z",
+              "WhenOpened": "2024-08-27T17:47:00.656Z",
               "EditorCaption": ""
             }
           ]

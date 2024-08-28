@@ -7,10 +7,19 @@ namespace RackManager.ViewModels
 {
     partial class AddAnimalViewModel : ViewModelBase
     {
+        public ICommand CancelCommand { get; set; }
+
+        public ICommand CreateCommand { get; set; }
+
+        public ICommand GetImageCommand { get; set; }
+
         private IMinMaxValue<float?> tempModel;
+
         private IMinMaxValue<int?> humidityModel;
         public ObservableCollection<SexEnum> SexComboBox { get; set; }
+
         private SexEnum sex;
+
         public SexEnum SelectedSex
         {
             get => this.sex;
@@ -20,9 +29,9 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(sex));
             }
         }
-        public ICommand CancelCommand { get; set; }
-        public ICommand CreateCommand { get; set; }
+
         private string name;
+
         public string AnimalName
         {
             get => this.name;
@@ -33,7 +42,9 @@ namespace RackManager.ViewModels
 
             }
         }
+
         private float? weight;
+
         public float? AnimalWeight
         {
             get => this.weight;
@@ -43,7 +54,9 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(weight));
             }
         }
+
         private DateTime? birthDate;
+
         public DateTime? AnimalBirthDate
         {
             get => this.birthDate;
@@ -53,7 +66,9 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(birthDate));
             }
         }
+
         private DateTime? feedingDate;
+
         public DateTime? AnimalFeedingDate
         {
             get => this.feedingDate;
@@ -63,7 +78,9 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(feedingDate));
             }
         }
+
         private DateTime? waterReplacementDate;
+
         public DateTime? AnimalWaterReplacementDate
         {
             get => this.waterReplacementDate;
@@ -73,7 +90,9 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(waterReplacementDate));
             }
         }
+
         private string subspecies;
+
         public string AnimalSubspecies
         {
             get => this.subspecies;
@@ -83,7 +102,9 @@ namespace RackManager.ViewModels
                 OnPropertyChanged(nameof(subspecies));
             }
         }
+
         private bool venomous;
+
         public bool AnimalVenomous
         {
             get => this.venomous;
@@ -91,6 +112,18 @@ namespace RackManager.ViewModels
             {
                 this.venomous = value;
                 OnPropertyChanged(nameof(venomous));
+            }
+        }
+        public string Image
+        {
+            get
+            {
+                if (imageService.ImagePath is not null)
+                {
+                    OnPropertyChanged(nameof(Image));
+                    return imageService.ImagePath;
+                }
+                return "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png";
             }
         }
         public float? AnimalMinTemp { get; set; }

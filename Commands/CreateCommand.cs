@@ -23,13 +23,13 @@ namespace RackManager.Commands
             {
                 action?.Invoke();
                 MessageBox.Show("Object created successfully", "Success", MessageBoxButton.OK);
+                navigationStore.CurrentViewModel = this.viewModel();
             }
             catch (ValueConflictException)
             {
                 MessageBox.Show("Cannot create object, incorrect values", "Error", MessageBoxButton.OK);
             }
 
-            navigationStore.CurrentViewModel = this.viewModel();
         }
     }
 }

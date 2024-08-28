@@ -10,20 +10,22 @@ namespace RackManager.ViewModels
 {
     partial class AddAnimalViewModel : ViewModelBase
     {
+        private readonly ImageService imageService;
         private AnimalService animalService;
         public AddAnimalViewModel(NavigationStore store, AnimalService animalService)
         {
             this.animalService = animalService;
+            this.imageService = new ImageService();
 
             SexComboBox = new ObservableCollection<SexEnum>(Enum.GetValues(typeof(SexEnum)) as SexEnum[]);
 
             SelectedSex = SexEnum.Female;
 
-
-
             CancelCommand = new NavigationCommand<AnimalsViewModel>(store, () => new AnimalsViewModel(store, animalService));
 
             CreateCommand = new CreateCommand<AnimalsViewModel>(store, () => new AnimalsViewModel(store, animalService), AddAnimal);
+
+            GetImageCommand = new GetImageCommand(this.imageService);
         }
 
         private void AddAnimal()
@@ -41,7 +43,7 @@ namespace RackManager.ViewModels
             }
             SnakeModel animal = new SnakeModel()
             {
-                Image = "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
+                Image = this.Image,
                 Name = AnimalName,
                 DateOfBirth = AnimalBirthDate,
                 Weight = AnimalWeight,
