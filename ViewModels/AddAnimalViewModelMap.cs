@@ -26,7 +26,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.sex = value;
-                OnPropertyChanged(nameof(sex));
+                OnPropertyChanged(nameof(SelectedSex));
             }
         }
 
@@ -38,7 +38,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.name = value;
-                OnPropertyChanged(nameof(name));
+                OnPropertyChanged(nameof(AnimalName));
 
             }
         }
@@ -51,7 +51,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.weight = value;
-                OnPropertyChanged(nameof(weight));
+                OnPropertyChanged(nameof(AnimalWeight));
             }
         }
 
@@ -63,7 +63,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.birthDate = value;
-                OnPropertyChanged(nameof(birthDate));
+                OnPropertyChanged(nameof(AnimalBirthDate));
             }
         }
 
@@ -75,7 +75,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.feedingDate = value;
-                OnPropertyChanged(nameof(feedingDate));
+                OnPropertyChanged(nameof(AnimalFeedingDate));
             }
         }
 
@@ -87,7 +87,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.waterReplacementDate = value;
-                OnPropertyChanged(nameof(waterReplacementDate));
+                OnPropertyChanged(nameof(AnimalWaterReplacementDate));
             }
         }
 
@@ -99,7 +99,7 @@ namespace RackManager.ViewModels
             set
             {
                 this.subspecies = value;
-                OnPropertyChanged(nameof(subspecies));
+                OnPropertyChanged(nameof(AnimalSubspecies));
             }
         }
 
@@ -111,19 +111,17 @@ namespace RackManager.ViewModels
             set
             {
                 this.venomous = value;
-                OnPropertyChanged(nameof(venomous));
+                OnPropertyChanged(nameof(AnimalVenomous));
             }
         }
+        private string image = "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png";
         public string Image
         {
-            get
+            get => this.image;
+            set
             {
-                if (imageService.ImagePath is not null)
-                {
-                    OnPropertyChanged(nameof(Image));
-                    return imageService.ImagePath;
-                }
-                return "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png";
+                image = value;
+                OnPropertyChanged(nameof(Image));
             }
         }
         public float? AnimalMinTemp { get; set; }

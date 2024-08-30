@@ -24,11 +24,14 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <Button Grid.Row="0" Command="{Binding GetImageCommand, UpdateSourceTrigger=PropertyChanged}">
+                <Button
+                    Grid.Row="0"
+                    Height="150"
+                    Command="{Binding GetImageCommand, UpdateSourceTrigger=PropertyChanged}">
                     <Image
                         HorizontalAlignment="Center"
                         VerticalAlignment="Top"
-                        Source="{Binding Image, UpdateSourceTrigger=PropertyChanged}"/>
+                        Source="{Binding Image, UpdateSourceTrigger=PropertyChanged}" />
                 </Button>
 
                 <Grid Grid.Row="1">

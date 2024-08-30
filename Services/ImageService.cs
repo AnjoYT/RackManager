@@ -1,13 +1,21 @@
-﻿using System.ComponentModel;
-
-namespace RackManager.Services
+﻿namespace RackManager.Services
 {
     public class ImageService
     {
-        public event EventHandler? ImageLoaded;
-        public string ImagePath { get; private set; }
+        private string imagePath;
+        public string ImagePath
+        {
+            get => imagePath;
+            set
+            {
+                if (value != null)
+                {
+                    imagePath = value;
+                }
+            }
+        }
         private readonly FileDialogService fileDialogService;
-        private string filter = "Image Files (*.img;*.png;*.jpg)|*.img;*.png;*.jpg";
+        private string filter => "Image Files (*.img;*.png;*.jpg)|*.img;*.png;*.jpg";
         public ImageService()
         {
             fileDialogService = new FileDialogService();
@@ -15,12 +23,7 @@ namespace RackManager.Services
         public string Open()
         {
             ImagePath = fileDialogService.Open(filter);
-            OnImageLoaded(this, new PropertyChangedEventArgs(nameof(this.ImagePath)));
             return ImagePath;
-        }
-        public void OnImageLoaded(object? sender, PropertyChangedEventArgs e)
-        {
-            ImageLoaded?.Invoke(sender, e);
         }
     }
 }

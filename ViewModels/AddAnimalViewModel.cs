@@ -11,6 +11,7 @@ namespace RackManager.ViewModels
     partial class AddAnimalViewModel : ViewModelBase
     {
         private readonly ImageService imageService;
+
         private AnimalService animalService;
         public AddAnimalViewModel(NavigationStore store, AnimalService animalService)
         {
@@ -25,7 +26,7 @@ namespace RackManager.ViewModels
 
             CreateCommand = new CreateCommand<AnimalsViewModel>(store, () => new AnimalsViewModel(store, animalService), AddAnimal);
 
-            GetImageCommand = new GetImageCommand(this.imageService);
+            GetImageCommand = new GetImageCommand(this.imageService, this);
         }
 
         private void AddAnimal()
