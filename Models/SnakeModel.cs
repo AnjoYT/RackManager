@@ -10,5 +10,13 @@
         public TempModel? Temp { get; set; }
         public HumidityModel? Humidity { get; set; }
         public EnclousureModel? Enclousure { get; set; }
+
+        //public bool IsEmpty()
+        //{
+        //    if ()
+        //    {
+
+        //    }
+        //}
     }
 }

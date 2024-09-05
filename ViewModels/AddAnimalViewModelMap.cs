@@ -18,14 +18,14 @@ namespace RackManager.ViewModels
         private IMinMaxValue<int?> humidityModel;
         public ObservableCollection<SexEnum> SexComboBox { get; set; }
 
-        private SexEnum sex;
+        private SexEnum sex = SexEnum.Male;
 
         public SexEnum SelectedSex
         {
-            get => this.sex;
+            get => sex;
             set
             {
-                this.sex = value;
+                sex = value;
                 OnPropertyChanged(nameof(SelectedSex));
             }
         }
@@ -34,59 +34,59 @@ namespace RackManager.ViewModels
 
         public string AnimalName
         {
-            get => this.name;
+            get => name;
             set
             {
-                this.name = value;
+                name = value;
                 OnPropertyChanged(nameof(AnimalName));
 
             }
         }
 
-        private float? weight;
+        private float weight;
 
-        public float? AnimalWeight
+        public float AnimalWeight
         {
-            get => this.weight;
+            get => weight;
             set
             {
-                this.weight = value;
+                weight = value;
                 OnPropertyChanged(nameof(AnimalWeight));
             }
         }
 
-        private DateTime? birthDate;
+        private DateTime birthDate = DateTime.Today;
 
-        public DateTime? AnimalBirthDate
+        public DateTime AnimalBirthDate
         {
-            get => this.birthDate;
+            get => birthDate;
             set
             {
-                this.birthDate = value;
+                birthDate = value;
                 OnPropertyChanged(nameof(AnimalBirthDate));
             }
         }
 
-        private DateTime? feedingDate;
+        private DateTime feedingDate = DateTime.Today;
 
-        public DateTime? AnimalFeedingDate
+        public DateTime AnimalFeedingDate
         {
-            get => this.feedingDate;
+            get => feedingDate;
             set
             {
-                this.feedingDate = value;
+                feedingDate = value;
                 OnPropertyChanged(nameof(AnimalFeedingDate));
             }
         }
 
-        private DateTime? waterReplacementDate;
+        private DateTime waterReplacementDate = DateTime.Today;
 
-        public DateTime? AnimalWaterReplacementDate
+        public DateTime AnimalWaterReplacementDate
         {
-            get => this.waterReplacementDate;
+            get => waterReplacementDate;
             set
             {
-                this.waterReplacementDate = value;
+                waterReplacementDate = value;
                 OnPropertyChanged(nameof(AnimalWaterReplacementDate));
             }
         }
@@ -95,42 +95,42 @@ namespace RackManager.ViewModels
 
         public string AnimalSubspecies
         {
-            get => this.subspecies;
+            get => subspecies;
             set
             {
-                this.subspecies = value;
+                subspecies = value;
                 OnPropertyChanged(nameof(AnimalSubspecies));
             }
         }
 
-        private bool venomous;
+        private bool venomous = false;
 
         public bool AnimalVenomous
         {
-            get => this.venomous;
+            get => venomous;
             set
             {
-                this.venomous = value;
+                venomous = value;
                 OnPropertyChanged(nameof(AnimalVenomous));
             }
         }
         private string image = "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png";
         public string Image
         {
-            get => this.image;
+            get => image;
             set
             {
                 image = value;
                 OnPropertyChanged(nameof(Image));
             }
         }
-        public float? AnimalMinTemp { get; set; }
-        public float? AnimalMaxTemp { get; set; }
-        public int? AnimalMinHum { get; set; }
-        public int? AnimalMaxHum { get; set; }
-        public float? AnimalLength { get; set; }
+        public float AnimalMinTemp { get; set; } = 18f;
+        public float AnimalMaxTemp { get; set; } = 32f;
+        public int AnimalMinHum { get; set; } = 40;
+        public int AnimalMaxHum { get; set; } = 60;
+        public float AnimalLength { get; set; }
         public EnclousureModel? Enclousure { get; set; }
-        public string? AddInformation { get; set; }
+        public string AddInformation { get; set; }
 
 
     }

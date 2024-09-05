@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace RackManager.Utils
+namespace RackManager.CustomControls
 {
     public class PathFinder
     {
