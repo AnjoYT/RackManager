@@ -11,6 +11,13 @@
     d:DesignWidth="674"
     Background="White"
     mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/ButtonResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150" />
@@ -109,10 +116,9 @@
                 <TextBox
                     Grid.Column="1"
                     Margin="6,5"
-                    MaxLength="23"
                     Text="{Binding AnimalName, UpdateSourceTrigger=PropertyChanged}">
                     <interactivity:Interaction.Behaviors>
-                        <CustomControl:TextValidationBehavior RegexValue="^-?\d+(\.\d+)?$" />
+                        <CustomControl:TextValidationBehavior MaxLength="25" RegexValue="^[a-zA-Z]+$" />
                     </interactivity:Interaction.Behaviors>
                 </TextBox>
 
@@ -124,8 +130,11 @@
                 <TextBox
                     Grid.Column="3"
                     Margin="5"
-                    MaxLength="7"
-                    Text="{Binding AnimalWeight, UpdateSourceTrigger=PropertyChanged}" />
+                    Text="{Binding AnimalWeight, UpdateSourceTrigger=PropertyChanged}">
+                    <interactivity:Interaction.Behaviors>
+                        <CustomControl:TextValidationBehavior MaxLength="10" RegexValue="^\d+([.,]\d+)?$" />
+                    </interactivity:Interaction.Behaviors>
+                </TextBox>
 
                 <TextBlock
                     Grid.Column="4"
@@ -292,7 +301,11 @@
                 <TextBox
                     Grid.Column="1"
                     Margin="5"
-                    Text="{Binding AnimalLength, UpdateSourceTrigger=PropertyChanged}" />
+                    Text="{Binding AnimalLength, UpdateSourceTrigger=PropertyChanged}">
+                    <interactivity:Interaction.Behaviors>
+                        <CustomControl:TextValidationBehavior MaxLength="10" RegexValue="^\d+([.,]\d+)?$" />
+                    </interactivity:Interaction.Behaviors>
+                </TextBox>
                 <TextBlock
                     Grid.Column="2"
                     Margin="6,5"
@@ -315,6 +328,7 @@
                     Text="{Binding AddInformation, UpdateSourceTrigger=PropertyChanged}" />
             </Grid>
             <Grid Grid.Row="6">
+                <!--<Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -329,6 +343,8 @@
                     Margin="5"
                     Command="{Binding CancelCommand, UpdateSourceTrigger=PropertyChanged}"
                     Content="Cancel" />
+            </Grid>-->
+                <ContentPresenter Content="test" ContentTemplateSelector="{StaticResource ButtonTemplateSelector}" />
             </Grid>
         </Grid>
 
