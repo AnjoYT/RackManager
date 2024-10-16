@@ -1,0 +1,52 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:utils="clr-namespace:RackManager.CustomControls">
+    <DataTemplate x:Key="AddAnimalModule">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Column="0"
+                Margin="5"
+                Command="{Binding DataContext.CreateCommand, UpdateSourceTrigger=PropertyChanged}"
+                Content="Create" />
+            <Button
+                Grid.Column="1"
+                Margin="5"
+                Command="{Binding DataContext.CancelCommand, UpdateSourceTrigger=PropertyChanged}"
+                Content="Cancel" />
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="ViewAnimalModule">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Column="0"
+                Margin="5"
+                Command="{Binding DataContext.ModifyCommand, UpdateSourceTrigger=PropertyChanged}"
+                Content="Modify" />
+            <Button
+                Grid.Column="1"
+                Margin="5"
+                Command="{Binding DataContext.DeleteCommand, UpdateSourceTrigger=PropertyChanged}"
+                Content="Delete" />
+            <Button
+                Grid.Column="2"
+                Margin="5"
+                Command="{Binding DataContext.CancelCommand, UpdateSourceTrigger=PropertyChanged}"
+                Content="Cancel" />
+        </Grid>
+    </DataTemplate>
+    <utils:ButtonTemplateSelector
+        x:Key="ButtonTemplateSelector"
+        versionOne="{StaticResource AddAnimalModule}"
+        versionTwo="{StaticResource ViewAnimalModule}" />
+
+</ResourceDictionary>
