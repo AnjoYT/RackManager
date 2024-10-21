@@ -1,0 +1,32 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:models="clr-namespace:RackManager.Models"
+    xmlns:utils="clr-namespace:RackManager.CustomControls">
+    <DataTemplate x:Key="SnakeTemplate" DataType="{x:Type models:SnakeModel}">
+        <Button Margin="5" Command="{Binding DataContext.AddAnimalCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, UpdateSourceTrigger=PropertyChanged}">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="{Binding Name}" />
+                <Image
+                    Width="150"
+                    Height="150"
+                    HorizontalAlignment="Center"
+                    Source="{Binding Image}" />
+            </StackPanel>
+        </Button>
+    </DataTemplate>
+    <DataTemplate x:Key="AddCardTemplate" DataType="{x:Type models:BaseCardModel}">
+        <Button Margin="5" Command="{Binding DataContext.AddAnimalCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, UpdateSourceTrigger=PropertyChanged}">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image
+                    Width="150"
+                    Height="150"
+                    Source="{Binding Image}" />
+            </StackPanel>
+        </Button>
+    </DataTemplate>
+    <utils:CardTemplateSelector
+        x:Key="CardTemplateSelector"
+        AddCardTemplate="{StaticResource AddCardTemplate}"
+        SnakeTemplate="{StaticResource SnakeTemplate}" />
+</ResourceDictionary>
