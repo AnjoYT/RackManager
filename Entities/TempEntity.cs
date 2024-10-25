@@ -1,9 +1,12 @@
 ﻿using RackManager.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RackManager.Entities
 {
-    public abstract class TempEntity : IMinMaxValue<float>
+    [Table("Temperature")]
+    public class TempEntity : IMinMaxValue<float>
     {
+        public int Id { get; set; }
         public float MinValue { get; set; }
         public float MaxValue { get; set; }
 

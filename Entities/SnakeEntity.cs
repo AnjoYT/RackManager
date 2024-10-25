@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-namespace RackManager.Entities
+﻿namespace RackManager.Entities
 {
-    [Table("Snakes")]
-    public class SnakeEntity : AnimalEntity
+    public class SnakeEntity : AnimalBaseEntity
     {
         public string Subspecies { get; set; }
         public bool IsVenomous { get; set; }
