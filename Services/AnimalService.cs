@@ -1,5 +1,8 @@
-﻿using RackManager.Models;
-using RackManager.CustomControls;
+﻿using RackManager.CustomControls;
+using RackManager.Data;
+using RackManager.Entities;
+using RackManager.Models;
+using RackManager.Utils;
 using System.Collections.ObjectModel;
 
 namespace RackManager.Services
@@ -7,15 +10,17 @@ namespace RackManager.Services
     public class AnimalService
     {
         public ObservableCollection<BaseCardModel> Cards { get; private set; }
-        public AnimalService()
+
+        public AnimalService(ApplicationDbContext dbContext)
         {
+            List<SnakeDTO> snakeEntities = dbContext.Snakes.ToList();
             Cards = new ObservableCollection<BaseCardModel>() {
                  new BaseCardModel()
                 {
                     Image = PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),
                     IsAddCard = true
-                },
-
+                }
+                 ,
                 new SnakeModel()
                 {
                     Name = "Dave",
@@ -35,10 +40,9 @@ namespace RackManager.Services
                     Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
                     Subspecies = "Corn Snake",
                     IsVenomous = false
-                }
-
-
+                },
             };
+            Cards.ToCollection<BaseCardModel>(new List<BaseCardModel>());
         }
         public void AddAnimal(MainAnimalModel animal)
         {
