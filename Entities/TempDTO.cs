@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace RackManager.Entities
 {
     [Table("Temperature")]
-    public class TempEntity : IMinMaxValue<float>
+    public class TempDTO : IMinMaxValue<float>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public float MinValue { get; set; }
         public float MaxValue { get; set; }
 
@@ -14,5 +14,14 @@ namespace RackManager.Entities
         {
             return true;
         }
+        //public TempModel Convert()
+        //{
+        //    TempModel temp = new TempModel()
+        //    {
+        //        MinValue = this.MinValue,
+        //        MaxValue = this.MaxValue
+
+        //    };
+        //}
     }
 }

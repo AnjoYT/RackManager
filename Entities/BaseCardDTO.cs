@@ -1,8 +1,8 @@
 ﻿namespace RackManager.Entities
 {
-    public class ImageEntity
+    public class BaseCardDTO
     {
         public int Id { get; set; }
-        public string? Image { get; set; }
+        public string Image { get; set; }
     }
 }

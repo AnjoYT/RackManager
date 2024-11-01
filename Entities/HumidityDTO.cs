@@ -1,12 +1,14 @@
 ﻿using RackManager.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RackManager.Entities
 {
     [Table("Humidity")]
-    public class HumidityEntity : IMinMaxValue<int>
+    public class HumidityDTO : IMinMaxValue<int>
     {
-        public int Id { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public int MinValue { get; set; }
         public int MaxValue { get; set; }
 
