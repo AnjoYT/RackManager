@@ -6,9 +6,26 @@ namespace RackManager.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<ImageEntity> Images { get; set; }
-        public DbSet<AnimalBaseEntity> Animals { get; set; }
-        public DbSet<SnakeEntity> Snakes { get; set; }
+        public DbSet<BaseCardDTO> Images { get; set; }
+        public DbSet<MainAnimalDTO> Animals { get; set; }
+        public DbSet<SnakeDTO> Snakes { get; set; }
+
+        private readonly static object _lock = new object();
+        private static ApplicationDbContext instance;
+
+        public ApplicationDbContext() { }
+
+        public static ApplicationDbContext GetInstance()
+        {
+            lock (_lock)
+            {
+                if (instance is null)
+                {
+                    instance = new ApplicationDbContext();
+                }
+                return instance;
+            }
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString);
@@ -16,14 +33,14 @@ namespace RackManager.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ImageEntity>()
+            modelBuilder.Entity<BaseCardDTO>()
                 .ToTable("Animal")
                 .HasDiscriminator<string>("Animals_type")
-                .HasValue<ImageEntity>("Image")
-                .HasValue<AnimalBaseEntity>("Animal_base")
-                .HasValue<SnakeEntity>("Snake");
-            modelBuilder.Entity<HumidityEntity>();
-            modelBuilder.Entity<TempEntity>();
+                .HasValue<BaseCardDTO>("Image")
+                .HasValue<MainAnimalDTO>("Animal_base")
+                .HasValue<SnakeDTO>("Snake");
+            modelBuilder.Entity<HumidityDTO>();
+            modelBuilder.Entity<TempDTO>();
             base.OnModelCreating(modelBuilder);
         }
     }
