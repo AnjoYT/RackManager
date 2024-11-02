@@ -1,7 +1,8 @@
 ﻿using RackManager.CustomControls;
 using RackManager.Data;
-using RackManager.Entities;
+using RackManager.Enums;
 using RackManager.Models;
+using RackManager.Services.SnakeProvide;
 using RackManager.Utils;
 using System.Collections.ObjectModel;
 
@@ -10,43 +11,65 @@ namespace RackManager.Services
     public class AnimalService
     {
         public ObservableCollection<BaseCardModel> Cards { get; private set; }
-
+        public SnakeProvider snakeProvider;
         public AnimalService(ApplicationDbContext dbContext)
         {
-            List<SnakeDTO> snakeEntities = dbContext.Snakes.ToList();
+            snakeProvider = new SnakeProvider(dbContext);
             Cards = new ObservableCollection<BaseCardModel>() {
-                 new BaseCardModel()
-                {
-                    Image = PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),
-                    IsAddCard = true
-                }
+                 new BaseCardModel(PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),true)
                  ,
-                new SnakeModel()
-                {
-                    Name = "Dave",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Subspecies = "Corn Snake",
-                },
-                new SnakeModel()
-                {
-                    Name = "George",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Subspecies = "Corn Snake",
-                    IsVenomous = false
-                },
-                new SnakeModel()
-                {
-                    Name = "George",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Subspecies = "Corn Snake",
-                    IsVenomous = false
-                },
+                new SnakeModel(
+                                PathFinder.RelativePath(@"Assets\Images\", "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png"),
+                                false,
+                                "John",
+                                DateTime.Now,
+                                13,
+                                SexEnum.Male,
+                                "Corn Snake",
+                                false,
+                                DateTime.Now,
+                                DateTime.Now,
+                                13,
+                                new TempModel(0,1),
+                                new HumidityModel(0,1),
+                                new EnclousureModel(1,1,1)),
+                new SnakeModel(PathFinder.RelativePath(@"Assets\Images\", "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png"),
+                                false,
+                                "Dave",
+                                DateTime.Now,
+                                13,SexEnum.Female,
+                                "Corn Snake",
+                                false,
+                                DateTime.Now,
+                                DateTime.Now,
+                                13,
+                                new TempModel(0,1),
+                                new HumidityModel(0,1),
+                                new EnclousureModel(1,1,1)),
+                new SnakeModel(PathFinder.RelativePath(@"Assets\Images\", "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png"),
+                                false,
+                                "George",
+                                DateTime.Now,
+                                13,SexEnum.Female,
+                                "Corn Snake",
+                                false,
+                                DateTime.Now,
+                                DateTime.Now,
+                                13,
+                                new TempModel(0,1),
+                                new HumidityModel(0,1),
+                                new EnclousureModel(1,1,1)),
             };
-            Cards.ToCollection<BaseCardModel>(new List<BaseCardModel>());
         }
-        public void AddAnimal(MainAnimalModel animal)
+        public async void AddAnimal(MainAnimalModel animal)
         {
             Cards.Add(animal);
+        }
+        public async void UpdateAnimals()
+        {
+            IEnumerable<BaseCardModel> snakes = await snakeProvider.RetrieveAllSnakes();
+
+            Cards.ToCollection(snakes);
         }
 
     }
