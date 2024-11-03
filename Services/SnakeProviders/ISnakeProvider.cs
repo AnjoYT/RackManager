@@ -6,6 +6,6 @@ namespace RackManager.Services.SnakeProvide
     interface ISnakeProvider
     {
         Task<IEnumerable<SnakeModel>> RetrieveAllSnakes();
-        SnakeModel Convert(SnakeDTO snake);
+        SnakeModel ToSnakeModel(SnakeDTO snake);
     }
 }

@@ -1,6 +1,5 @@
 ﻿using RackManager.CustomControls;
 using RackManager.Data;
-using RackManager.Enums;
 using RackManager.Models;
 using RackManager.Services.SnakeProvide;
 using RackManager.Utils;
@@ -15,51 +14,7 @@ namespace RackManager.Services
         public AnimalService(ApplicationDbContext dbContext)
         {
             snakeProvider = new SnakeProvider(dbContext);
-            Cards = new ObservableCollection<BaseCardModel>() {
-                 new BaseCardModel(PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),true)
-                 ,
-                new SnakeModel(
-                                PathFinder.RelativePath(@"Assets\Images\", "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png"),
-                                false,
-                                "John",
-                                DateTime.Now,
-                                13,
-                                SexEnum.Male,
-                                "Corn Snake",
-                                false,
-                                DateTime.Now,
-                                DateTime.Now,
-                                13,
-                                new TempModel(0,1),
-                                new HumidityModel(0,1),
-                                new EnclousureModel(1,1,1)),
-                new SnakeModel(PathFinder.RelativePath(@"Assets\Images\", "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png"),
-                                false,
-                                "Dave",
-                                DateTime.Now,
-                                13,SexEnum.Female,
-                                "Corn Snake",
-                                false,
-                                DateTime.Now,
-                                DateTime.Now,
-                                13,
-                                new TempModel(0,1),
-                                new HumidityModel(0,1),
-                                new EnclousureModel(1,1,1)),
-                new SnakeModel(PathFinder.RelativePath(@"Assets\Images\", "E:\\REPOS\\PLIKI_TESTOWE\\testImage.png"),
-                                false,
-                                "George",
-                                DateTime.Now,
-                                13,SexEnum.Female,
-                                "Corn Snake",
-                                false,
-                                DateTime.Now,
-                                DateTime.Now,
-                                13,
-                                new TempModel(0,1),
-                                new HumidityModel(0,1),
-                                new EnclousureModel(1,1,1)),
-            };
+            Cards = new ObservableCollection<BaseCardModel>();
         }
         public async void AddAnimal(MainAnimalModel animal)
         {
@@ -68,8 +23,9 @@ namespace RackManager.Services
         public async void UpdateAnimals()
         {
             IEnumerable<BaseCardModel> snakes = await snakeProvider.RetrieveAllSnakes();
-
+            Cards.Clear();
             Cards.ToCollection(snakes);
+            Cards.Add(new BaseCardModel(PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"), true));
         }
 
     }

@@ -21,9 +21,9 @@ namespace RackManager.Services.SnakeProvide
                 .Include(item => item.Humidity)
                 .Include(item => item.Enclousure)
                 .ToListAsync();
-            return snakeDTOs.Select(snake => Convert(snake));
+            return snakeDTOs.Select(snake => ToSnakeModel(snake));
         }
-        public SnakeModel Convert(SnakeDTO snake)
+        public SnakeModel ToSnakeModel(SnakeDTO snake)
         {
             return new SnakeModel(
                                     snake.Image,
