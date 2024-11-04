@@ -3,7 +3,7 @@ using RackManager.Models;
 
 namespace RackManager.Services.SnakeProvide
 {
-    interface ISnakeProvider
+    public interface ISnakeProvider
     {
         Task<IEnumerable<SnakeModel>> RetrieveAllSnakes();
         SnakeModel ToSnakeModel(SnakeDTO snake);
