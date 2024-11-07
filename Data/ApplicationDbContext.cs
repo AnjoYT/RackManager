@@ -1,34 +1,23 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RackManager.Entities;
-using System.Configuration;
 
 namespace RackManager.Data
 {
     public class ApplicationDbContext : DbContext
     {
+        private readonly string _connectionString;
+
         public DbSet<BaseCardDTO> Images { get; set; }
         public DbSet<MainAnimalDTO> Animals { get; set; }
         public DbSet<SnakeDTO> Snakes { get; set; }
 
-        private readonly static object _lock = new object();
-        private static ApplicationDbContext instance;
-
-        public ApplicationDbContext() { }
-
-        public static ApplicationDbContext GetInstance()
+        public ApplicationDbContext(string connectionString)
         {
-            lock (_lock)
-            {
-                if (instance is null)
-                {
-                    instance = new ApplicationDbContext();
-                }
-                return instance;
-            }
+            _connectionString = connectionString;
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString);
+            optionsBuilder.UseSqlServer(_connectionString);
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
