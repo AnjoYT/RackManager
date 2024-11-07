@@ -13,9 +13,9 @@ namespace RackManager.ViewModels
 
         public ICommand GetImageCommand { get; set; }
 
-        private IMinMaxValue<float?> tempModel;
+        private TempModel tempModel;
 
-        private IMinMaxValue<int?> humidityModel;
+        private HumidityModel humidityModel;
         public ObservableCollection<SexEnum> SexComboBox { get; set; }
 
         private SexEnum sex = SexEnum.Male;
@@ -129,7 +129,7 @@ namespace RackManager.ViewModels
         public int AnimalMinHum { get; set; } = 40;
         public int AnimalMaxHum { get; set; } = 60;
         public float AnimalLength { get; set; }
-        public EnclousureModel? Enclousure { get; set; }
+        public EnclousureModel? Enclousure { get; set; } = new EnclousureModel(1, 2, 3);
         public string AddInformation { get; set; }
 
 
