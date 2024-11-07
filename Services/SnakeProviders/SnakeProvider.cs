@@ -3,25 +3,29 @@ using RackManager.Data;
 using RackManager.Entities;
 using RackManager.Models;
 
-namespace RackManager.Services.SnakeProvide
+namespace RackManager.Services.SnakeProviders
 {
     public class SnakeProvider : ISnakeProvider
     {
-        private readonly ApplicationDbContext dbContext;
+        private readonly IDbContextFactory _dbContextFactory;
 
-        public SnakeProvider(ApplicationDbContext dbContext)
+        public SnakeProvider(IDbContextFactory dbContextFactory)
         {
-            this.dbContext = dbContext;
+            _dbContextFactory = dbContextFactory;
         }
 
         public async Task<IEnumerable<SnakeModel>> RetrieveAllSnakes()
         {
-            IEnumerable<SnakeDTO> snakeDTOs = await dbContext.Snakes
-                .Include(item => item.Temp)
-                .Include(item => item.Humidity)
-                .Include(item => item.Enclousure)
-                .ToListAsync();
-            return snakeDTOs.Select(snake => ToSnakeModel(snake));
+            using (ApplicationDbContext dbContext = _dbContextFactory.CreateDbContext())
+            {
+                IEnumerable<SnakeDTO> snakeDTOs = await dbContext.Snakes
+                    .Include(item => item.Temp)
+                    .Include(item => item.Humidity)
+                    .Include(item => item.Enclousure)
+                    .ToListAsync();
+
+                return snakeDTOs.Select(snake => ToSnakeModel(snake));
+            }
         }
         public SnakeModel ToSnakeModel(SnakeDTO snake)
         {

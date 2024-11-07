@@ -1,20 +1,26 @@
 ﻿using RackManager.Data;
 using RackManager.Entities;
 using RackManager.Models;
+using System.Diagnostics;
 
 namespace RackManager.Services.SnakeCreators
 {
     class SnakeCreator : ISnakeCreator
     {
-        private readonly ApplicationDbContext dbContext;
-        public SnakeCreator(ApplicationDbContext dbContext)
+        private readonly IDbContextFactory _dbContextFactory;
+        public SnakeCreator(IDbContextFactory dbContextFactory)
         {
-            this.dbContext = dbContext;
+            _dbContextFactory = dbContextFactory;
         }
         public async Task CreateSnake(SnakeModel snake)
         {
-            dbContext.Snakes.Add(ToSnakeDTO(snake));
-            await dbContext.SaveChangesAsync();
+            using (ApplicationDbContext dbContext = _dbContextFactory.CreateDbContext())
+            {
+
+                dbContext.Snakes.Add(ToSnakeDTO(snake));
+                await dbContext.SaveChangesAsync();
+                Debug.WriteLine("Task completed");
+            }
         }
 
         public SnakeDTO ToSnakeDTO(SnakeModel snake)

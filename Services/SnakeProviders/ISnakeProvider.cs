@@ -1,7 +1,7 @@
 ﻿using RackManager.Entities;
 using RackManager.Models;
 
-namespace RackManager.Services.SnakeProvide
+namespace RackManager.Services.SnakeProviders
 {
     public interface ISnakeProvider
     {
