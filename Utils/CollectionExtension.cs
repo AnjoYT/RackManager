@@ -14,7 +14,7 @@ namespace RackManager.Utils
                 }
                 return collection;
             }
-            return null;
+            return new ObservableCollection<T>();
         }
     }
 }
