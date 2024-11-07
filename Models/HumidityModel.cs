@@ -1,14 +1,9 @@
 ﻿namespace RackManager.Models
 {
-    public class HumidityModel : IMinMaxValue<int?>
+    public class HumidityModel : IMinMaxValue<int>
     {
-        public int? MinValue { get; set; }
-        public int? MaxValue { get; set; }
-        public HumidityModel(int? minValue, int? maxValue)
-        {
-            MinValue = minValue;
-            MaxValue = maxValue;
-        }
+        public int MinValue { get; set; }
+        public int MaxValue { get; set; }
 
         public bool Conflict()
         {

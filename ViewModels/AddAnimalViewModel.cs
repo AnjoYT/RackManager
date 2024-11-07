@@ -29,9 +29,17 @@ namespace RackManager.ViewModels
 
         private void AddAnimal()
         {
-            tempModel = new TempModel(AnimalMinTemp, AnimalMaxTemp);
+            tempModel = new TempModel()
+            {
+                MinValue = AnimalMinTemp,
+                MaxValue = AnimalMaxTemp
+            };
 
-            humidityModel = new HumidityModel(AnimalMinHum, AnimalMaxHum);
+            humidityModel = new HumidityModel()
+            {
+                MinValue = AnimalMinHum,
+                MaxValue = AnimalMaxHum
+            };
             if (tempModel.Conflict())
             {
                 throw new ValueConflictException();
@@ -52,8 +60,12 @@ namespace RackManager.ViewModels
                 LastFeedingDate = AnimalFeedingDate,
                 WaterReplacementDate = waterReplacementDate,
                 Length = AnimalLength,
+                Temp = tempModel,
+                Humidity = humidityModel,
+                Enclousure = Enclousure,
             };
             animalService.AddAnimal(animal);
+
         }
     }
 }

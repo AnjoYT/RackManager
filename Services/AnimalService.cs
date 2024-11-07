@@ -1,5 +1,8 @@
-﻿using RackManager.Models;
-using RackManager.CustomControls;
+﻿using RackManager.CustomControls;
+using RackManager.Models;
+using RackManager.Services.SnakeCreators;
+using RackManager.Services.SnakeProviders;
+using RackManager.Utils;
 using System.Collections.ObjectModel;
 
 namespace RackManager.Services
@@ -7,42 +10,29 @@ namespace RackManager.Services
     public class AnimalService
     {
         public ObservableCollection<BaseCardModel> Cards { get; private set; }
-        public AnimalService()
+        private readonly ISnakeProvider _snakeProvider;
+        private readonly ISnakeCreator _snakeCreator;
+        public AnimalService(ISnakeCreator snakeCreator, ISnakeProvider snakeProvider)
         {
-            Cards = new ObservableCollection<BaseCardModel>() {
-                 new BaseCardModel()
-                {
-                    Image = PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),
-                    IsAddCard = true
-                },
-
-                new SnakeModel()
-                {
-                    Name = "Dave",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Subspecies = "Corn Snake",
-                },
-                new SnakeModel()
-                {
-                    Name = "George",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Subspecies = "Corn Snake",
-                    IsVenomous = false
-                },
-                new SnakeModel()
-                {
-                    Name = "George",
-                    Image ="E:\\REPOS\\PLIKI_TESTOWE\\testImage.png",
-                    Subspecies = "Corn Snake",
-                    IsVenomous = false
-                }
-
-
-            };
+            _snakeProvider = snakeProvider;
+            _snakeCreator = snakeCreator;
+            Cards = new ObservableCollection<BaseCardModel>();
         }
-        public void AddAnimal(MainAnimalModel animal)
+        public void AddAnimal(BaseCardModel animal)
         {
-            Cards.Add(animal);
+            _snakeCreator.CreateSnake((SnakeModel)animal);
+            UpdateAnimals();
+        }
+        public async Task UpdateAnimals()
+        {
+            IEnumerable<BaseCardModel> snakes = await _snakeProvider.RetrieveAllSnakes();
+            Cards.Clear();
+            Cards.ToCollection(snakes);
+            Cards.Add(new BaseCardModel()
+            {
+                Image = PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),
+                IsAddCard = true
+            });
         }
 
     }

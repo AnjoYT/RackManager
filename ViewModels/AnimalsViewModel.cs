@@ -15,6 +15,7 @@ namespace RackManager.ViewModels
         public AnimalsViewModel(NavigationStore store, AnimalService animalService)
         {
             this.animalService = animalService;
+            animalService.UpdateAnimals();
             AddAnimalCommand = new NavigationCommand<AddAnimalViewModel>(store, () => new AddAnimalViewModel(store, this.animalService));
         }
     }

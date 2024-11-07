@@ -1,8 +1,8 @@
 ﻿using RackManager.Enums;
 
-namespace RackManager.Models
+namespace RackManager.Entities
 {
-    public class MainAnimalModel : BaseCardModel
+    public class MainAnimalDTO : BaseCardDTO
     {
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
