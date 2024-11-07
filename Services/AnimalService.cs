@@ -23,7 +23,7 @@ namespace RackManager.Services
             _snakeCreator.CreateSnake((SnakeModel)animal);
             UpdateAnimals();
         }
-        public async void UpdateAnimals()
+        public async Task UpdateAnimals()
         {
             IEnumerable<BaseCardModel> snakes = await _snakeProvider.RetrieveAllSnakes();
             Cards.Clear();

@@ -23,39 +23,35 @@ namespace RackManager.Services.SnakeCreators
             }
         }
 
-        public SnakeDTO ToSnakeDTO(SnakeModel snake)
+        public SnakeDTO ToSnakeDTO(SnakeModel snake) => new SnakeDTO()
         {
-            return new SnakeDTO()
+            Image = snake.Image,
+            Name = snake.Name,
+            DateOfBirth = snake.DateOfBirth,
+            Weight = snake.Weight,
+            Sex = snake.Sex,
+            Subspecies = snake.Subspecies,
+            IsVenomous = snake.IsVenomous,
+            LastFeedingDate = snake.LastFeedingDate,
+            WaterReplacementDate = snake.WaterReplacementDate,
+            Length = snake.Length,
+            Temp = new TempDTO()
             {
-                Image = snake.Image,
-                Name = snake.Name,
-                DateOfBirth = snake.DateOfBirth,
-                Weight = snake.Weight,
-                Sex = snake.Sex,
-                Subspecies = snake.Subspecies,
-                IsVenomous = snake.IsVenomous,
-                LastFeedingDate = snake.LastFeedingDate,
-                WaterReplacementDate = snake.WaterReplacementDate,
-                Length = snake.Length,
-                Temp = new TempDTO()
-                {
-                    MinValue = snake.Temp.MinValue,
-                    MaxValue = snake.Temp.MaxValue
-                },
-                Humidity = new HumidityDTO()
-                {
-                    MinValue = snake.Humidity.MinValue,
-                    MaxValue = snake.Humidity.MaxValue
-                },
-                Enclousure = new EnclousureDTO()
-                {
-                    Width = snake.Enclousure.Width,
-                    Height = snake.Enclousure.Height,
-                    Length = snake.Enclousure.Length
-                }
-            };
-
-        }
+                MinValue = snake.Temp.MinValue,
+                MaxValue = snake.Temp.MaxValue
+            },
+            Humidity = new HumidityDTO()
+            {
+                MinValue = snake.Humidity.MinValue,
+                MaxValue = snake.Humidity.MaxValue
+            },
+            Enclousure = new EnclousureDTO()
+            {
+                Width = snake.Enclousure.Width,
+                Height = snake.Enclousure.Height,
+                Length = snake.Enclousure.Length
+            }
+        };
     }
 
 }
