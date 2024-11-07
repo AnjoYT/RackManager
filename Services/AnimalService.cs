@@ -10,8 +10,8 @@ namespace RackManager.Services
     public class AnimalService
     {
         public ObservableCollection<BaseCardModel> Cards { get; private set; }
-        private ISnakeProvider _snakeProvider;
-        private ISnakeCreator _snakeCreator;
+        private readonly ISnakeProvider _snakeProvider;
+        private readonly ISnakeCreator _snakeCreator;
         public AnimalService(ISnakeCreator snakeCreator, ISnakeProvider snakeProvider)
         {
             _snakeProvider = snakeProvider;
@@ -28,7 +28,11 @@ namespace RackManager.Services
             IEnumerable<BaseCardModel> snakes = await _snakeProvider.RetrieveAllSnakes();
             Cards.Clear();
             Cards.ToCollection(snakes);
-            Cards.Add(new BaseCardModel(PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"), true));
+            Cards.Add(new BaseCardModel()
+            {
+                Image = PathFinder.RelativePath(@"Assets\Images\", "AddAnimal.png"),
+                IsAddCard = true
+            });
         }
 
     }

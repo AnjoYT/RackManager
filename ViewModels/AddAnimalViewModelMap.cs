@@ -129,7 +129,12 @@ namespace RackManager.ViewModels
         public int AnimalMinHum { get; set; } = 40;
         public int AnimalMaxHum { get; set; } = 60;
         public float AnimalLength { get; set; }
-        public EnclousureModel? Enclousure { get; set; } = new EnclousureModel(1, 2, 3);
+        public EnclousureModel? Enclousure { get; set; } = new EnclousureModel()
+        {
+            Height = 1,
+            Width = 1,
+            Length = 1
+        };
         public string AddInformation { get; set; }
 
 

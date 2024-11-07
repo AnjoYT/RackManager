@@ -29,32 +29,35 @@ namespace RackManager.Services.SnakeProviders
         }
         public SnakeModel ToSnakeModel(SnakeDTO snake)
         {
-            return new SnakeModel(
-                                    snake.Image,
-                                    false,
-                                    snake.Name,
-                                    snake.DateOfBirth,
-                                    snake.Weight,
-                                    snake.Sex,
-                                    snake.Subspecies,
-                                    snake.IsVenomous,
-                                    snake.LastFeedingDate,
-                                    snake.WaterReplacementDate,
-                                    snake.Length,
-                                    new TempModel(
-                                        snake.Temp.MinValue,
-                                        snake.Temp.MaxValue
-                                        ),
-                                    new HumidityModel(
-                                        snake.Humidity.MinValue,
-                                        snake.Humidity.MaxValue
-                                        ),
-                                    new EnclousureModel(
-                                        snake.Enclousure.Width,
-                                        snake.Enclousure.Height,
-                                        snake.Enclousure.Length
-                                        )
-                                    );
+            return new SnakeModel()
+            {
+                Image = snake.Image,
+                Name = snake.Name,
+                DateOfBirth = snake.DateOfBirth,
+                Weight = snake.Weight,
+                Sex = snake.Sex,
+                Subspecies = snake.Subspecies,
+                IsVenomous = snake.IsVenomous,
+                LastFeedingDate = snake.LastFeedingDate,
+                WaterReplacementDate = snake.WaterReplacementDate,
+                Length = snake.Length,
+                Temp = new TempModel()
+                {
+                    MinValue = snake.Temp.MinValue,
+                    MaxValue = snake.Temp.MaxValue
+                },
+                Humidity = new HumidityModel()
+                {
+                    MinValue = snake.Humidity.MinValue,
+                    MaxValue = snake.Humidity.MaxValue
+                },
+                Enclousure = new EnclousureModel()
+                {
+                    Width = snake.Enclousure.Width,
+                    Height = snake.Enclousure.Height,
+                    Length = snake.Enclousure.Length
+                }
+            };
         }
     }
 }
