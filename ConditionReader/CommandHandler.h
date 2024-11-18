@@ -5,11 +5,10 @@ class CommandHandler {
     float inputValue;
     Stream& _inputStream;
     float GetFloatInput(Stream& _inputStream);
+    bool IsFloat(String input);
 	public:
     CommandHandler(Stream& inputStream);
 		float GetInput();
-    
-
  };
 
 #endif // !COMMANDHANDLER_H

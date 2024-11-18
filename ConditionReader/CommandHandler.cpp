@@ -12,6 +12,15 @@ float CommandHandler::GetInput()
 float CommandHandler::GetFloatInput(Stream& _inputStream)
 {
   String input = _inputStream.readStringUntil('\n');
+  if(IsFloat(input) && !input.isEmpty()){
   return input.toFloat();
+  }
+  return NAN;
+}
+
+bool CommandHandler::IsFloat(String input){
+  char* end;
+  std::strtod(input.c_str(),&end);
+  return (*end == '\0');
 }
 
