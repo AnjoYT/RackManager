@@ -12,5 +12,11 @@
 	}
 	float TemperatureController::ReadTemperature()
 	{
-		return thermometer.getTempC();
+      return thermometer.getTempC();
 	}
+  int8_t TemperatureController::getAlarmH(){
+    return thermometer.getAlarmHigh();
+  }
+  int8_t TemperatureController::getAlarmL(){
+    return thermometer.getAlarmLow();
+  }
