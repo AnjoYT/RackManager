@@ -14,9 +14,9 @@
 	{
       return thermometer.getTempC();
 	}
-  int8_t TemperatureController::getAlarmH(){
+  int8_t TemperatureController::GetAlarmH(){
     return thermometer.getAlarmHigh();
   }
-  int8_t TemperatureController::getAlarmL(){
+  int8_t TemperatureController::GetAlarmL(){
     return thermometer.getAlarmLow();
   }

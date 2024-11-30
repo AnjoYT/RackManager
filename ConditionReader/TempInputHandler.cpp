@@ -8,7 +8,7 @@ MinMax TempInputHandler::GetInput()
       inputValue = GetFloatInput();
       return inputValue;
   }
-  return MinMax();
+  return previousValue;
 }
 MinMax TempInputHandler::GetFloatInput()
 {
@@ -17,7 +17,7 @@ MinMax TempInputHandler::GetFloatInput()
   {
   return ParseMinMax(input);
   }
-  return MinMax();
+  return previousValue;
 }
 
 bool TempInputHandler::IsFloat(std::string input){
@@ -31,7 +31,7 @@ MinMax TempInputHandler::ParseMinMax(std::string input){
   std::vector<std::string> valueNotParsed = Split(input,';');
   if(valueNotParsed.size()!=2)
   {
-    return MinMax();
+    return previousValue;
   }
   if(IsFloat(valueNotParsed[0])&&IsFloat(valueNotParsed[1]))
   {
@@ -44,10 +44,11 @@ MinMax TempInputHandler::ParseMinMax(std::string input){
       minMaxTemp.minTemp = std::stof(valueNotParsed[1]);
       minMaxTemp.maxTemp = std::stof(valueNotParsed[0]);
     }
-    
+    previousValue.minTemp = minMaxTemp.minTemp;
+    previousValue.maxTemp = minMaxTemp.maxTemp;
   }
   else {
-    return MinMax();
+    return previousValue;
   }
   return minMaxTemp;
   

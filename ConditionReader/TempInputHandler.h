@@ -6,6 +6,7 @@
 #include "MinMax.h"
 class TempInputHandler {
   private:
+    MinMax previousValue;
     MinMax inputValue;
     Stream& _inputStream;
     MinMax GetFloatInput();
