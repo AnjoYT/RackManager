@@ -31,6 +31,7 @@ namespace RackManager.Services.SnakeProviders
         {
             return new SnakeModel()
             {
+                Id = snake.Id,
                 Image = snake.Image,
                 Name = snake.Name,
                 DateOfBirth = snake.DateOfBirth,
@@ -51,12 +52,14 @@ namespace RackManager.Services.SnakeProviders
                     MinValue = snake.Humidity.MinValue,
                     MaxValue = snake.Humidity.MaxValue
                 },
-                Enclousure = new EnclousureModel()
+                Enclosure = new EnclosureModel()
                 {
                     Width = snake.Enclousure.Width,
                     Height = snake.Enclousure.Height,
                     Length = snake.Enclousure.Length
-                }
+                },
+                ArduinoIdentifier = snake.ArduinoIdentifier,
+                AddInformation = snake.AddInformation
             };
         }
     }

@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RackManager", "RackManager.csproj", "{02BEAE40-11E1-45D6-890C-3808A229BFFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RackManager", "RackManager.csproj", "{02BEAE40-11E1-45D6-890C-3808A229BFFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA} = {B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArduinoCOMLibrary", "..\ArduinoCOMLibrary\ArduinoCOMLibrary.csproj", "{B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{02BEAE40-11E1-45D6-890C-3808A229BFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02BEAE40-11E1-45D6-890C-3808A229BFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02BEAE40-11E1-45D6-890C-3808A229BFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D2AAC1-CEA1-4C42-BE4B-84F4E94A52CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

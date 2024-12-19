@@ -3,26 +3,25 @@ using RackManager.Entities;
 using RackManager.Models;
 using System.Diagnostics;
 
-namespace RackManager.Services.SnakeCreators
+namespace RackManager.Services.SnakeDeletes
 {
-    class SnakeCreator : ISnakeCreator
+    public class SnakeDelete : ISnakeDelete
     {
         private readonly IDbContextFactory _dbContextFactory;
-        public SnakeCreator(IDbContextFactory dbContextFactory)
+        public SnakeDelete(IDbContextFactory dbContextFactory)
         {
             _dbContextFactory = dbContextFactory;
         }
-        public async Task CreateSnake(SnakeModel snake)
+        public void DeleteSnake(SnakeModel snake)
         {
             using (ApplicationDbContext dbContext = _dbContextFactory.CreateDbContext())
             {
-
-                dbContext.Snakes.Add(ToSnakeDTO(snake));
-                await dbContext.SaveChangesAsync();
+                var entity = dbContext.Snakes.FirstOrDefault(x => x.Id == snake.Id) ?? throw new ArgumentNullException();
+                dbContext.Snakes.Remove(entity);
+                dbContext.SaveChanges();
                 Debug.WriteLine("Task completed");
             }
         }
-
         public SnakeDTO ToSnakeDTO(SnakeModel snake) => new SnakeDTO()
         {
             Id = snake.Id,
@@ -56,6 +55,4 @@ namespace RackManager.Services.SnakeCreators
             AddInformation = snake.AddInformation
         };
     }
-
 }
-

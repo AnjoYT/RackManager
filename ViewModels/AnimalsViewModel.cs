@@ -1,4 +1,5 @@
-﻿using RackManager.Commands;
+﻿using ArduinoCOMLibrary;
+using RackManager.Commands;
 using RackManager.Models;
 using RackManager.Services;
 using RackManager.Stores;
@@ -9,14 +10,29 @@ namespace RackManager.ViewModels
 {
     public class AnimalsViewModel : ViewModelBase
     {
-        private readonly AnimalService animalService;
+        private readonly AnimalService _animalService;
+        private readonly ArduinoConnectorFactory _connectorFactory;
+        private NavigationStore _store;
         public ICommand AddAnimalCommand { get; set; }
-        public ObservableCollection<BaseCardModel> Cards => animalService.Cards;
-        public AnimalsViewModel(NavigationStore store, AnimalService animalService)
+        public ICommand ViewAnimalCommand { get; set; }
+        public ObservableCollection<BaseCardModel> Cards => _animalService.Cards;
+        public AnimalsViewModel(NavigationStore store, AnimalService animalService, ArduinoConnectorFactory connectorFactory)
         {
-            this.animalService = animalService;
-            animalService.UpdateAnimals();
-            AddAnimalCommand = new NavigationCommand<AddAnimalViewModel>(store, () => new AddAnimalViewModel(store, this.animalService));
+            _animalService = animalService;
+            _connectorFactory = connectorFactory;
+            animalService.UpdateListAnimals();
+            AddAnimalCommand = new NavigationCommand<AddAnimalViewModel>(store, () => new AddAnimalViewModel(store, this._animalService, connectorFactory));
+            SetNavigationStore(store);
+        }
+        public void SetNavigationStore(NavigationStore store)
+        {
+            _store = store;
+
+            ViewAnimalCommand = new RelayCommand<SnakeModel>((animal) => NavigateToViewAnimal(animal));
+        }
+        public void NavigateToViewAnimal(SnakeModel snake)
+        {
+            _store.CurrentViewModel = new ViewAnimalViewModel(_store, _animalService, snake, _connectorFactory);
         }
     }
 }

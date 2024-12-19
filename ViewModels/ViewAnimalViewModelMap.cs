@@ -5,19 +5,21 @@ using System.Windows.Input;
 
 namespace RackManager.ViewModels
 {
-    public partial class AddAnimalViewModel : ViewModelBase
+    public partial class ViewAnimalViewModel : ViewModelBase
+
     {
+        public ICommand ModifyCommand { get; set; }
+        public ICommand DeleteCommand { get; set; }
         public ICommand CancelCommand { get; set; }
-        public ICommand CreateCommand { get; set; }
         public ICommand GetImageCommand { get; set; }
         public ICommand ConnectArduinoCommand { get; set; }
 
         private TempModel tempModel;
-        private HumidityModel humidityModel;
 
+        private HumidityModel humidityModel;
         public ObservableCollection<SexEnum> SexComboBox { get; set; }
 
-        private SexEnum sex = SexEnum.Male;
+        private SexEnum sex;
 
         public SexEnum SelectedSex
         {
@@ -96,9 +98,9 @@ namespace RackManager.ViewModels
             }
         }
 
-        private DateTime waterReplacementDate = DateTime.Today;
+        private DateTime? waterReplacementDate = DateTime.Today;
 
-        public DateTime AnimalWaterReplacementDate
+        public DateTime? AnimalWaterReplacementDate
         {
             get => waterReplacementDate;
             set
@@ -145,7 +147,7 @@ namespace RackManager.ViewModels
         public float AnimalMaxTemp { get; set; } = 32f;
         public int AnimalMinHum { get; set; } = 40;
         public int AnimalMaxHum { get; set; } = 60;
-        public float AnimalLength { get; set; }
+        public float? AnimalLength { get; set; }
         public ObservableCollection<EnclosureModel> EnclosureOptions
         {
             get;
@@ -158,13 +160,12 @@ namespace RackManager.ViewModels
             get => selectedEnclosure;
             set
             {
-
                 selectedEnclosure = value;
                 OnPropertyChanged(nameof(SelectedEnclosure));
-
             }
         }
         public string AddInformation { get; set; }
+
 
 
     }

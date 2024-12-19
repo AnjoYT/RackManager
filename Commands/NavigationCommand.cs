@@ -5,18 +5,19 @@ namespace RackManager.Commands
 {
     public class NavigationCommand<TViewModel> : CommandBase where TViewModel : ViewModelBase
     {
-        private readonly NavigationStore navigationStore;
-        private readonly Func<TViewModel> viewModel;
+        private readonly NavigationStore _navigationStore;
+        private readonly Func<TViewModel> _viewModel;
 
-        public NavigationCommand(NavigationStore navigationStore, Func<TViewModel> viewModel)
+        public NavigationCommand(NavigationStore navigationStore, Func<TViewModel> viewModel, Action<object>? action = null)
         {
-            this.navigationStore = navigationStore;
-            this.viewModel = viewModel;
+            _navigationStore = navigationStore;
+            _viewModel = viewModel;
         }
 
         public override void Execute(object? parameter)
         {
-            navigationStore.CurrentViewModel = this.viewModel();
+
+            _navigationStore.CurrentViewModel = _viewModel();
         }
     }
 }

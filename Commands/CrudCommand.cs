@@ -5,12 +5,12 @@ using System.Windows;
 
 namespace RackManager.Commands
 {
-    class CreateCommand<TViewModel> : CommandBase where TViewModel : ViewModelBase
+    public class CrudCommand<TViewModel> : CommandBase where TViewModel : ViewModelBase
     {
         private readonly Func<TViewModel> viewModel;
         private readonly NavigationStore navigationStore;
         private readonly Action action;
-        public CreateCommand(NavigationStore navigationStore, Func<TViewModel> viewModel, Action action)
+        public CrudCommand(NavigationStore navigationStore, Func<TViewModel> viewModel, Action action)
         {
             this.action = action;
             this.viewModel = viewModel;
@@ -22,12 +22,16 @@ namespace RackManager.Commands
             try
             {
                 action?.Invoke();
-                MessageBox.Show("Object created successfully", "Success", MessageBoxButton.OK);
+                MessageBox.Show("Operation completed successfully", "Success", MessageBoxButton.OK);
                 navigationStore.CurrentViewModel = this.viewModel();
             }
             catch (ValueConflictException)
             {
-                MessageBox.Show("Cannot create object, incorrect values", "Error", MessageBoxButton.OK);
+                MessageBox.Show("Cannot complete operation, incorrect values", "Error", MessageBoxButton.OK);
+            }
+            catch (EnclosureNotSetException)
+            {
+                MessageBox.Show("Cannot complete operation, enclosure is not set");
             }
 
         }

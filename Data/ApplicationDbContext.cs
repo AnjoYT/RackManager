@@ -10,6 +10,7 @@ namespace RackManager.Data
         public DbSet<BaseCardDTO> Images { get; set; }
         public DbSet<MainAnimalDTO> Animals { get; set; }
         public DbSet<SnakeDTO> Snakes { get; set; }
+        //public DbSet<EnclosureDTO> Enclosures { get; set; }
 
         public ApplicationDbContext(string connectionString)
         {
@@ -22,7 +23,7 @@ namespace RackManager.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BaseCardDTO>()
+            modelBuilder.Entity<BaseCardDTO>() // bazowy model transmisyjny
                 .ToTable("Animal")
                 .HasDiscriminator<string>("Animals_type")
                 .HasValue<BaseCardDTO>("Image")

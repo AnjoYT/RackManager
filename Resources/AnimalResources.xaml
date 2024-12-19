@@ -4,7 +4,10 @@
     xmlns:models="clr-namespace:RackManager.Models"
     xmlns:utils="clr-namespace:RackManager.CustomControls">
     <DataTemplate x:Key="SnakeTemplate" DataType="{x:Type models:SnakeModel}">
-        <Button Margin="5" Command="{Binding DataContext.AddAnimalCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, UpdateSourceTrigger=PropertyChanged}">
+        <Button
+            Margin="5"
+            Command="{Binding DataContext.ViewAnimalCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, UpdateSourceTrigger=PropertyChanged}"
+            CommandParameter="{Binding}">
             <StackPanel>
                 <TextBlock HorizontalAlignment="Center" Text="{Binding Name}" />
                 <Image

@@ -8,8 +8,8 @@ class TemperatureController{
   public:
     TemperatureController(uint8_t pin);
     void SetAlarm(uint8_t minTemp,uint8_t maxTemp);
-    uint8_t HasAlarm();
-    float ReadTemperature();
+    uint8_t IsAlarmActive();
+    float GetCurrentTemperature();
     int8_t GetAlarmL();
     int8_t GetAlarmH();
 };

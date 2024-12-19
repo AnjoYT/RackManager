@@ -9,14 +9,8 @@
         public float? Length { get; set; }
         public TempModel? Temp { get; set; }
         public HumidityModel? Humidity { get; set; }
-        public EnclousureModel? Enclousure { get; set; }
-
-        //public bool IsEmpty()
-        //{
-        //    if ()
-        //    {
-
-        //    }
-        //}
+        public EnclosureModel? Enclosure { get; set; }
+        public string? ArduinoIdentifier { get; set; }
+        public string AddInformation { get; set; }
     }
 }

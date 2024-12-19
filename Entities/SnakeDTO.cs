@@ -10,5 +10,7 @@
         public TempDTO? Temp { get; set; }
         public HumidityDTO? Humidity { get; set; }
         public EnclousureDTO? Enclousure { get; set; }
+        public string? ArduinoIdentifier { get; set; }
+        public string AddInformation { get; set; }
     }
 }

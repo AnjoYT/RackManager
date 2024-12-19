@@ -29,6 +29,12 @@
                 Style="{StaticResource NavigationButton}">
                 Animals
             </Button>
+            <Button
+                Grid.Row="0"
+                Command="{Binding EnclosureCommand}"
+                Style="{StaticResource NavigationButton}">
+                Enclosures
+            </Button>
         </StackPanel>
 
     </Grid>

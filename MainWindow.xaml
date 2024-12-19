@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:RackManager"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="clr-namespace:RackManager.Views"
+    xmlns:vms="clr-namespace:RackManager.ViewModels"
     Title="MainWindow"
     Width="875"
     Height="450"
@@ -23,7 +24,7 @@
             <ColumnDefinition Width="155" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <views:NavigationView Grid.Column="0" />
+        <views:NavigationView Grid.Column="0" DataContext="{Binding NavigationViewModel}" />
         <ContentPresenter Grid.Column="1" Content="{Binding CurrentView}" />
     </Grid>
 </Window>
